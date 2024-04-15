@@ -5,6 +5,7 @@ import SecondSection from "./components/SecondSection.vue"
 import ThirdSection from "./components/ThirdSection.vue"
 import FourthSection from "./components/FourthSection.vue"
 import FifthSection from "./components/FifthSection.vue"
+import SixthSection from "./components/SixthSection.vue"
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import FifthSection from "./components/FifthSection.vue"
   <ThirdSection />
   <FourthSection />
   <FifthSection />
+  <SixthSection />
 </template>

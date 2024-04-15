@@ -1,8 +1,9 @@
 <script setup>
-
+import Navbar_Component from './components/Navbar.vue'
+import FirstSection from './components/FirstSection.vue'
 </script>
 
 <template>
-  <div>Shailendra</div>
+  <Navbar_Component />
+  <FirstSection />
 </template>
-

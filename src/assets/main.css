@@ -1,25 +1,27 @@
 @import "./base.css";
 
-.navbar_box {
-  /* Frame 8 */
+#app {
+  width: 1366px;
+}
 
+@media screen and (min-width: 1366px) {
+  #app {
+    width: 100%;
+  }
+}
+
+.navbar_box {
   box-sizing: border-box;
   margin: 0 auto;
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 12px 120px;
   gap: 402px;
-
   width: 1366px;
   height: 68px;
-
   border-bottom: 1px solid #cbd5e1;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -30,10 +32,8 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-
   width: 411px;
   height: 44px;
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -70,6 +70,5 @@ button {
   font-weight: 600;
   font-size: 15px;
   line-height: 128%;
-  /* or 20px */
   color: #f8fafc;
 }

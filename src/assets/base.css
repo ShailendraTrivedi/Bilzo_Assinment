@@ -9,5 +9,22 @@
 }
 
 body {
-  min-height: 100vh;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  position: relative;
+  height: 3192px;
+
+  background: linear-gradient(
+      182.42deg,
+      #e3f0f9 2.03%,
+      #f8fafc 17.33%,
+      #f1f5f9 62.04%
+    ),
+    #f1f5f9;
 }

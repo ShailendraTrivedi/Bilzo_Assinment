@@ -10,7 +10,7 @@
   width: 1126px;
   height: 176px;
   background: #ffffff;
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px 1px 1px 1px;
   border-style: solid;
   border-color: #cbd5e1;
   border-radius: 14px;
@@ -23,7 +23,7 @@
 .second_section > div {
   width: 351px;
   height: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -35,4 +35,21 @@
   order: 0;
   flex-grow: 0;
   z-index: 0;
+}
+
+.second_section > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 103px;
+  width: 998px;
+  height: 48px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 1;
+  list-style-type: none;
 }

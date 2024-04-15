@@ -1,0 +1,38 @@
+.second_section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 64px 40px;
+  gap: 36px;
+  isolation: isolate;
+  width: 1126px;
+  height: 176px;
+  background: #ffffff;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: #cbd5e1;
+  border-radius: 14px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0 auto;
+}
+
+.second_section > div {
+  width: 351px;
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 128%;
+  /* or 20px */
+  letter-spacing: 0.24em;
+  color: #94a3b8;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}

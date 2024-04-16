@@ -2,7 +2,7 @@
 import Navbar_Component from './components/Navbar.vue'
 import FirstSection from './components/FirstSection.vue'
 import SecondSection from "./components/SecondSection.vue"
-// import ThirdSection from "./components/ThirdSection.vue"
+import ThirdSection from "./components/ThirdSection.vue"
 // import FourthSection from "./components/FourthSection.vue"
 // import FifthSection from "./components/FifthSection.vue"
 // import SixthSection from "./components/SixthSection.vue"
@@ -15,7 +15,7 @@ import SecondSection from "./components/SecondSection.vue"
   <SecondSection />
   <div class="line">
   </div>
-  <!-- <ThirdSection /> -->
+  <ThirdSection />
   <!-- <FourthSection /> -->
   <!-- <FifthSection /> -->
   <!-- <SixthSection /> -->

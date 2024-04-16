@@ -186,6 +186,7 @@ export default {
 .third_section>div>h1 {
     width: 413px;
     height: 41px;
+    font-family: 'Extatica';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -229,8 +230,6 @@ export default {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-
-    /* gap: 10px; */
 }
 
 .third_section>div>div>ul>li {
@@ -245,6 +244,46 @@ export default {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .third_section {
+        width: 360px;
+        padding: 0;
+    }
+
+    .third_section>div {
+        padding: 48px 24px;
+        gap: 36px;
+        width: 360px;
+        height: 1572px;
+    }
+
+    .third_section>div>h1 {
+        width: 312px;
+        height: 72px;
+        font-size: 28px;
+    }
+
+    .third_section>div>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        width: 312px;
+        padding: 0;
+    }
+
+    .third_section>div>div>ul {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        gap: 40px;
+    }
+
+    .third_section>div>div>ul>li {
+        width: 312px;
+    }
 }
 
 .third_section>div>div>ul>li>p {

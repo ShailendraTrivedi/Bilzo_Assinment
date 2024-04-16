@@ -9,24 +9,26 @@ export default {
 </script>
 <template>
     <section class="second_section">
-        <div>USED BY OVER 50 ENTERPRISES</div>
-        <ul>
-            <li>
-                <HotJar />
-            </li>
-            <li>
-                <HotJar />
-            </li>
-            <li>
-                <HotJar />
-            </li>
-            <li>
-                <HotJar />
-            </li>
-            <li>
-                <HotJar />
-            </li>
-        </ul>
+        <h3>USED BY OVER 50 ENTERPRISES</h3>
+        <div>
+            <ul class="carousel">
+                <li>
+                    <HotJar />
+                </li>
+                <li>
+                    <HotJar />
+                </li>
+                <li>
+                    <HotJar />
+                </li>
+                <li>
+                    <HotJar />
+                </li>
+                <li>
+                    <HotJar />
+                </li>
+            </ul>
+        </div>
     </section>
 </template>
 
@@ -53,7 +55,7 @@ export default {
     margin: 0 auto;
 }
 
-.second_section>div {
+.second_section>h3 {
     width: 351px;
     height: 20px;
     font-family: "Inter";
@@ -70,7 +72,7 @@ export default {
     z-index: 0;
 }
 
-.second_section>ul {
+.second_section>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,5 +87,60 @@ export default {
     flex-grow: 0;
     z-index: 1;
     list-style-type: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+
+@media screen and (max-width:400px) {
+    .second_section {
+        padding: 0px;
+        gap: 16px;
+        width: 356px;
+        height: 79px;
+        overflow: hidden;
+        background: none;
+        border: none;
+    }
+
+    .second_section>h3 {
+        width: 266px;
+        height: 15px;
+        font-size: 12px;
+    }
+
+    .second_section>div {
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        width: 404px;
+        height: 48px;
+    }
+
+    .carousel {
+        gap: 50px;
+        animation: slideLeft 5s linear infinite forwards;
+    }
+
+    @keyframes slideLeft {
+        0% {
+            left: 0;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+
 }
 </style>

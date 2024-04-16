@@ -1,10 +1,12 @@
 <script>
 import Logo_Icon from '../assets/icons/Logo.vue'
+import HamBurger from "../assets/icons/HamBurger.vue"
 
 export default {
   name: 'Navbar_Component',
   components: {
-    LogoIcon: Logo_Icon
+    LogoIcon: Logo_Icon,
+    HamBurger: HamBurger
   }
 }
 </script>
@@ -19,8 +21,10 @@ export default {
       <li>Integration</li>
       <button>Start trial</button>
     </ul>
+    <HamBurger class="hamburger" />
   </div>
 </template>
+
 
 <style scoped>
 .navbar_box {
@@ -31,7 +35,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 12px 120px;
-  gap: 402px;
   width: 1366px;
   height: 68px;
   border-bottom: 1px solid #cbd5e1;
@@ -45,7 +48,7 @@ export default {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  width: 411px;
+  width: 480px;
   height: 44px;
   flex: none;
   order: 0;
@@ -53,7 +56,11 @@ export default {
   list-style-type: none;
 }
 
-.navbar_box>ul>li {
+.hamburger {
+  display: none
+}
+
+.navbar_box>ul>li:not(:last-child) {
   color: var(--500, #64748b);
   width: 131px;
   height: 44px;
@@ -61,5 +68,26 @@ export default {
   gap: 10px;
   opacity: 0px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px 12px 16px;
+    width: 360px;
+    height: 68px;
+
+  }
+
+  .navbar_box>ul {
+    display: none
+  }
+
+  .hamburger {
+    display: block
+  }
 }
 </style>

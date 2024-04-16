@@ -13,9 +13,33 @@ import Footer_Component from "./components/Footer.vue"
   <Navbar_Component />
   <FirstSection />
   <SecondSection />
+  <div class="line">
+  </div>
   <ThirdSection />
   <FourthSection />
-  <FifthSection />
-  <SixthSection />
+  <div class="fifth_section">
+    <FifthSection />
+    <SixthSection />
+  </div>
   <Footer_Component />
 </template>
+
+<style scoped>
+@media screen and (max-width: 400px) {
+  .line {
+    width: 312px;
+    height: 2px;
+    background: #ced4dc;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 50px auto;
+  }
+
+  .fifth_section {
+    display: none;
+  }
+
+}
+</style>

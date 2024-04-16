@@ -1,52 +1,13 @@
 @import "./base.css";
 
-.navbar_box {
-  /* Frame 8 */
-
-  box-sizing: border-box;
-  margin: 0 auto;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 120px;
-  gap: 402px;
-
+#app {
   width: 1366px;
-  height: 68px;
-
-  border-bottom: 1px solid #cbd5e1;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-.navbar_box > ul {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-
-  width: 411px;
-  height: 44px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  list-style-type: none;
-}
-
-.navbar_box > ul > li {
-  color: var(--500, #64748b);
-  width: 131px;
-  height: 44px;
-  padding: 12px 20px 12px 20px;
-  gap: 10px;
-  opacity: 0px;
+@media screen and (min-width: 1366px) {
+  #app {
+    width: 100%;
+  }
 }
 
 button {
@@ -70,6 +31,6 @@ button {
   font-weight: 600;
   font-size: 15px;
   line-height: 128%;
-  /* or 20px */
   color: #f8fafc;
+  cursor: pointer;
 }

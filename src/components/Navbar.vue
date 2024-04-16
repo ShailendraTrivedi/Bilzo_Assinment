@@ -70,7 +70,7 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .navbar_box {
     display: flex;
     flex-direction: row;

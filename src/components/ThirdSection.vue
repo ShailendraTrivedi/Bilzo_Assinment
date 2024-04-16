@@ -292,7 +292,7 @@ export default {
     z-index: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
     .third_section {
         width: 360px;
         height: 1872px;

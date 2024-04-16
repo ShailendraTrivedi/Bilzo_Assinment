@@ -134,7 +134,7 @@ export default {
   flex-grow: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .first_section {
     padding: 48px 24px;
     gap: 56px;
@@ -269,7 +269,7 @@ export default {
   width: 352px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .input_values {
     width: 312px;
     height: 192px;

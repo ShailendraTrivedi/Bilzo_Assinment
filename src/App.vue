@@ -25,7 +25,7 @@ import Footer_Component from "./components/Footer.vue"
 </template>
 
 <style scoped>
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .line {
     width: 312px;
     height: 2px;

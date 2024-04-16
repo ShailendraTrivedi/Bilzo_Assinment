@@ -9,7 +9,7 @@ export default {
 </script>
 <template>
     <section class="second_section">
-        <div>USED BY OVER 50 ENTERPRISES</div>
+        <h3>USED BY OVER 50 ENTERPRISES</h3>
         <ul>
             <li>
                 <HotJar />
@@ -53,7 +53,7 @@ export default {
     margin: 0 auto;
 }
 
-.second_section>div {
+.second_section>h3 {
     width: 351px;
     height: 20px;
     font-family: "Inter";
@@ -85,5 +85,32 @@ export default {
     flex-grow: 0;
     z-index: 1;
     list-style-type: none;
+}
+
+@media screen and (max-width:400px) {
+    .second_section {
+        padding: 0px;
+        gap: 16px;
+        width: 356px;
+        height: 79px;
+        overflow: hidden;
+        background: none;
+        border: none;
+    }
+
+    .second_section>h3 {
+        width: 266px;
+        height: 15px;
+        font-size: 12px;
+    }
+
+    .second_section>ul {
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        width: 404px;
+        height: 48px;
+    }
+
 }
 </style>

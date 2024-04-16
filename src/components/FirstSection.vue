@@ -7,8 +7,8 @@ export default {
   <section class="first_section">
     <div>
       <div>
-        <div>The World’s Most Configurable</div>
-        <div>Travel & Expense Management Software</div>
+        <h4>The World’s Most Configurable</h4>
+        <h1>Travel & Expense Management Software</h1>
       </div>
       <p>
         Configure <span>any</span> rule. Enable a world class mobile experience for your users. Get
@@ -18,8 +18,8 @@ export default {
     </div>
     <div class="input_values">
       <div>
-        <input type="text" class="" placeholder="Name" />
-        <input type="text" class="" placeholder="Official email ID" />
+        <input type="text" class="name" placeholder="Name" />
+        <input type="text" class="email" placeholder="Official email ID" />
         <button>Start trial</button>
       </div>
       <div>
@@ -36,6 +36,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 56px 244px;
   gap: 40px;
   width: 1366px;
@@ -99,7 +100,7 @@ export default {
   text-fill-color: transparent;
 }
 
-.first_section>div>div div:nth-child(1) {
+.first_section>div>div>h4 {
   width: 411px;
   height: 36px;
   font-family: 'Inter';
@@ -118,7 +119,7 @@ export default {
   flex-grow: 0;
 }
 
-.first_section>div>div div:nth-child(2) {
+.first_section>div>div>h1 {
   width: 975px;
   height: 72px;
   font-family: 'Extatica';
@@ -131,6 +132,44 @@ export default {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .first_section {
+    padding: 48px 24px;
+    gap: 56px;
+    width: 360px;
+    height: 612px;
+  }
+
+  .first_section>div {
+    gap: 32px;
+    width: 312px;
+  }
+
+  .first_section>div>div {
+    gap: 20px;
+    width: 312px;
+  }
+
+  .first_section>div>p {
+    width: 312px;
+    height: 75px;
+    font-size: 12px;
+  }
+
+  .first_section>div>div>h4 {
+    width: 206px;
+    height: 18px;
+    font-size: 14px;
+  }
+
+  .first_section>div>div>h1 {
+    width: 312px;
+    height: 72px;
+    font-size: 28px;
+  }
+
 }
 
 .input_values {
@@ -146,7 +185,7 @@ export default {
   flex-grow: 0;
 }
 
-.input_values div:nth-child(1) {
+.input_values>div:nth-child(1) {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -160,7 +199,7 @@ export default {
   margin: 0 auto;
 }
 
-.input_values div:nth-child(2) {
+.input_values>div:nth-child(2) {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -174,7 +213,7 @@ export default {
   margin: 0 auto;
 }
 
-.input_values div:nth-child(2)>p {
+.input_values>div:nth-child(2)>p {
   width: 130px;
   height: 20px;
   font-family: 'Inter';
@@ -187,7 +226,7 @@ export default {
   flex-grow: 0;
 }
 
-.input_values div:nth-child(2)>span {
+.input_values>div:nth-child(2)>span {
   width: 6px;
   height: 6px;
   background: #94a3b8;
@@ -196,11 +235,11 @@ export default {
   flex-grow: 0;
 }
 
-.input_values div:nth-child(1)>input:focus {
+.input_values>div:nth-child(1)>input:focus {
   outline: none;
 }
 
-.input_values div:nth-child(1)>input {
+.input_values>div:nth-child(1)>input {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -219,15 +258,34 @@ export default {
   font-size: 16px;
   line-height: 128%;
   color: #94a3b8;
+  height: 44px;
 }
 
-.input_values div:nth-child(1) input:nth-child(1) {
+.input_values>div:nth-child(1)>.name {
   width: 200px;
-  height: 44px;
 }
 
-.input_values div:nth-child(1) input:nth-child(2) {
+.input_values>div:nth-child(1) .email {
   width: 352px;
-  height: 44px;
+}
+
+@media screen and (max-width: 400px) {
+  .input_values {
+    width: 312px;
+    height: 192px;
+  }
+
+  .input_values>div:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 312px;
+    height: 156px;
+  }
+
+  .input_values>div:nth-child(1)>.name,
+  .input_values>div:nth-child(1)>.email {
+    width: 312px;
+  }
 }
 </style>

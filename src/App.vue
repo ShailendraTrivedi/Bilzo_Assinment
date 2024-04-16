@@ -6,6 +6,7 @@ import ThirdSection from "./components/ThirdSection.vue"
 import FourthSection from "./components/FourthSection.vue"
 import FifthSection from "./components/FifthSection.vue"
 import SixthSection from "./components/SixthSection.vue"
+import Footer_Component from "./components/Footer.vue"
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import SixthSection from "./components/SixthSection.vue"
   <FourthSection />
   <FifthSection />
   <SixthSection />
+  <Footer_Component />
 </template>

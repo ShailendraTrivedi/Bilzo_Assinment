@@ -1,5 +1,4 @@
 <script>
-import '../assets/css/third_section.css'
 import Setup_Employee_Groups from "../assets/icons/Setup_Employee_Groups.vue"
 import The_Definitive_Rule_Engine from "../assets/icons/The_Definitive_Rule_Engine.vue"
 import Customized_Reports from "../assets/icons/Customized_Reports.vue"
@@ -153,3 +152,215 @@ export default {
         </div>
     </section>
 </template>
+
+<style scoped>
+.third_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px;
+    gap: 80px;
+    width: 1366px;
+    height: 683px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0 auto;
+}
+
+.third_section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+    width: 1366px;
+    height: 521px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.third_section>div>h1 {
+    width: 413px;
+    height: 41px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 128%;
+    text-align: center;
+    background: linear-gradient(90.37deg, #2d56ec 0.3%, #1aacea 112.39%),
+        linear-gradient(90.16deg, #355ded 0.21%, #6f33f0 100.08%), #475569;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.third_section>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 120px;
+    gap: 48px;
+    width: 1366px;
+    height: 432px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.third_section>div>div>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 1126px;
+    height: 96px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /* gap: 10px; */
+}
+
+.third_section>div>div>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 351.33px;
+    height: 96px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.third_section>div>div>ul>li>p {
+    width: 351.33px;
+    height: 48px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    color: #64748b;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.third_section>div>div>ul>li>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 363.33px;
+    height: 32px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.third_section>div>div>ul>li>div>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    isolation: isolate;
+    width: 253px;
+    height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.third_section>div>div>ul>li>div>div:nth-child(1)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 32px;
+    height: 32px;
+    background: #365eee;
+    border-radius: 2px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.third_section>div>div>ul>li>div>div:nth-child(1)>span {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    background: rgba(54, 94, 238, 0.2);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.third_section>div>div>ul>li>div>div:nth-child(1)>h5 {
+    width: 100%;
+    height: 25px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #475569;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+.third_section>div>div>ul>li>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 6px;
+    gap: 10px;
+    width: 88px;
+    height: 21px;
+    background: rgba(235, 163, 28, 0.2);
+    border-radius: 2px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142%;
+    color: #eba31c;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+</style>

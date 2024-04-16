@@ -16,7 +16,7 @@ export default {
 <template>
     <div class="full_fourth_section">
         <section class="fourth_section">
-            <div>Integrations</div>
+            <h3>Integrations</h3>
             <div>
                 <Integration_Image />
             </div>
@@ -90,7 +90,7 @@ export default {
     position: relative;
 }
 
-.fourth_section>div:nth-child(1) {
+.fourth_section>h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +123,7 @@ export default {
     flex-grow: 0;
 }
 
-.fourth_section>div:nth-child(2) {
+.fourth_section>div {
     position: absolute;
     width: 772px;
     height: 161px;
@@ -149,6 +149,34 @@ export default {
     align-self: stretch;
     flex-grow: 0;
     z-index: 2;
+}
+
+@media screen and (max-width: 400px) {
+    .fourth_section {
+        width: 360px;
+        gap: 50px;
+        height: fit-content;
+    }
+
+    .fourth_section>h3 {
+        width: 312px;
+        height: 36px;
+        font-size: 28px;
+    }
+
+    .fourth_section>div {
+        display: none;
+    }
+
+    .fourth_section>ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+        width: 312px;
+        height: 796px;
+    }
 }
 
 .fourth_section>ul>li>div {

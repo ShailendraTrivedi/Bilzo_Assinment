@@ -14,7 +14,7 @@
 body {
   font-family: "Extatica";
   position: relative;
-  height: 3192px;
+  margin: 0 auto;
   background: linear-gradient(
       182.42deg,
       #e3f0f9 2.03%,

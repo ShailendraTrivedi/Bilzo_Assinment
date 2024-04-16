@@ -246,46 +246,6 @@ export default {
     flex-grow: 0;
 }
 
-@media screen and (max-width: 400px) {
-    .third_section {
-        width: 360px;
-        padding: 0;
-    }
-
-    .third_section>div {
-        padding: 48px 24px;
-        gap: 36px;
-        width: 360px;
-        height: 1572px;
-    }
-
-    .third_section>div>h1 {
-        width: 312px;
-        height: 72px;
-        font-size: 28px;
-    }
-
-    .third_section>div>div {
-        flex-direction: column;
-        align-items: center;
-        gap: 36px;
-        width: 312px;
-        padding: 0;
-    }
-
-    .third_section>div>div>ul {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-        gap: 40px;
-    }
-
-    .third_section>div>div>ul>li {
-        width: 312px;
-    }
-}
-
 .third_section>div>div>ul>li>p {
     width: 351.33px;
     height: 48px;
@@ -330,6 +290,65 @@ export default {
     flex-grow: 0;
     position: relative;
     z-index: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .third_section {
+        width: 360px;
+        height: 1872px;
+        padding: 0;
+    }
+
+    .third_section>div {
+        padding: 48px 24px;
+        gap: 36px;
+        width: 360px;
+        height: fit-content;
+    }
+
+    .third_section>div>h1 {
+        width: 312px;
+        height: 72px;
+        font-size: 28px;
+    }
+
+    .third_section>div>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        width: 312px;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .third_section>div>div>ul {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        gap: 40px;
+    }
+
+    .third_section>div>div>ul>li {
+        width: 312px;
+        height: fit-content;
+    }
+
+    .third_section>div>div>ul>li>p {
+        width: 312px;
+        height: 96px;
+    }
+
+    .third_section>div>div>ul>li>div {
+        isolation: isolate;
+        width: 315px;
+    }
+
+    .third_section>div>div>ul>li>div>div:nth-child(1) {
+        gap: 8px;
+        width: fit-content;
+        height: 32px;
+    }
 }
 
 .third_section>div>div>ul>li>div>div:nth-child(1)>div {

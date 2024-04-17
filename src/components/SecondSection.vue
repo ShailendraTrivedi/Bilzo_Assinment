@@ -101,7 +101,7 @@ export default {
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:360px) {
     .second_section {
         padding: 0px;
         gap: 16px;
